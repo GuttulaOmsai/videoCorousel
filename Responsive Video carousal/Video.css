@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(27, 19, 19);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1250px;
+    margin-left: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(7, 207, 247);
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+
+.owl-carousel {
+   width: 1400px;
+   height: 200px;
+   margin-left: 65px;
+   position: relative; /* Add position relative */
+   top: 40px;
+}
+.owl-carousel .item-video{
+    margin-left: -10px;
+    height: 400px;
+}
+
+.owl-dots {
+   margin-left: 650px;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    display: inline-block;
+}
+
+.owl-dot span {
+    width: 11px;
+    height: 11px;
+    background-color: rgb(7, 207, 247);
+    border-radius: 50%;
+    display: block;
+    margin: 5px 3px;
+}
+
+.owl-dot.active span {
+    background-color: rgb(60, 4, 241);
+}
+
+.item-video {
+    width: 400px;
+    margin: 20px; /* Adjust margin for proper spacing */
+   height: 400px;
+   margin-top: -20px;
+    background-color: aliceblue;
+    
+}
+
+/* media quries in tab view*/
+@media screen and (max-width: 900px) {
+    .container h1 {
+      margin-left: 450px; /* Adjust as needed */
+      width: 600px; /* Let the width be auto for responsiveness */
+    }
+  
+    .container {
+      margin-top: 80px;
+    }
+    
+    body {
+      overflow: hidden;
+      width: 100%;
+    }
+    .owl-dots {
+        justify-content: center;
+         margin-top: 20px;
+         margin-left: 600px;
+         width: 100px;
+     }
+  }
+  
+  /* Mobile view */
+  @media only screen and (max-width: 600px) {
+    .container {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    h1 {
+      font-size: 45px;
+      margin-left: 0;
+    }
+  
+    .owl-carousel .item-video {
+      height: 400px;
+    
+    }
+    
+    .owl-dots {
+       font-size: 40px;
+     }
+  }
